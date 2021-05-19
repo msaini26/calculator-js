@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <input id="numOne" placeholder="Enter a Number" type="text" name="number">
+    <input id="numTwo" placeholder="Enter a second number" name="number">
+    <button onclick="add()">Add</button>
+    <button onclick="subtract()">Subtract</button>
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="divide()">Divide</button>
+    <p>There are two easter eggs hidden on this page. Click around to find them &#128007 &#128064</p>
+    <div onclick="alertM()">
+        <a id="egg" href="https://www.linkedin.com/in/mansi-saini26/">Easter Egg #1</a>
+    </div>
+    <div onclick="alertM()">
+        <a id="egg2" href="https://github.com/msaini26">Easter Egg #2</a>
+    </div>
+
+    <script src="" async defer></script>
+</body>
+
+<style>
+    p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        display: flex;
+    }
+
+    #egg {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-size: 20px;
+    }
+
+    #egg2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 900px;
+    }
+    div {
+        width: 100px;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 100px;
+    }
+</style>
+
+<script>
+
+
+    // var numOne = window.prompt("Enter in a number: ")
+    // alert("Your number is " + numOne)
+
+
+
+    console.log(numOne)
+
+    function add() {
+        var one = document.getElementById('numOne').value
+        var two = document.getElementById('numTwo').value
+        var sum = +one + +two
+        alert(sum)
+        location.reload()
+    }
+
+    function subtract() {
+        var one = document.getElementById('numOne').value
+        var two = document.getElementById('numTwo').value
+        var diff = +one - +two
+        alert(diff)
+        location.reload()
+    }
+
+    function multiply() {
+        var one = document.getElementById('numOne').value
+        var two = document.getElementById('numTwo').value
+        alert(one * two)
+        location.reload()
+    }
+
+    function divide() {
+        var one = document.getElementById('numOne').value
+        var two = document.getElementById('numTwo').value
+        alert(one / two)
+        location.reload()
+    }
+
+    function alertM() {
+        alert("Congrats! You found an easter egg")
+    }
+</script>
+
+
+</html>
